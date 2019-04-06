@@ -23,7 +23,7 @@ public class ChatApp extends JFrame {
 		int answer = JOptionPane.showConfirmDialog(null, "Would you like to host a connection?", "Buttons!",
 				JOptionPane.YES_NO_OPTION);
 		if (answer == JOptionPane.YES_OPTION) {
-			serve = new Server(8080);
+			serve = new Server(8221);
 			setTitle("SERVER");
 			JOptionPane.showMessageDialog(null,
 					"Server started at: " + serve.getIPAddress() + "\nPort: " + serve.getPort());
